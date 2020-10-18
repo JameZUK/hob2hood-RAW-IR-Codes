@@ -1,5 +1,5 @@
 # hob2hood RAW IR Codes
-Here you will find raw IR Codes for AEG/Electrolux hob2hood Codes
+Here you will find raw IR Codes for AEG/Electrolux hob2hood devices
 
 Found here: https://www.mikrocontroller.net/topic/469269
 Linked here: https://pastebin.com/N6kG7Wu5
