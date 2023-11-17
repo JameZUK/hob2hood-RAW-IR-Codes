@@ -40,3 +40,49 @@ Linked here: https://pastebin.com/N6kG7Wu5
 * 0x24ACF947,"RawData":[684,1488,658,778,684,758,686,2278,660,788,628,1532,688,1504,686,786,658]
 * 0x24ACF947,"RawData":[706,1506,660,782,634,814,660,2250,660,786,686,1532,660,1504,686,786,656]
 * 0x24ACF947,"RawData":[656,1532,686,784,660,758,684,2254,688,758,710,1482,682,1510,682,786,656]
+
+
+## Broadlink codes for home assistant configuration. Tested with RM4 mini. 
+I used this stolen and adapted code https://www.jdoodle.com/a/6Swy to convert the pulse arrays to base64. Mind that it is python _2_. 
+In HA add this to `config/.storage/broadlink_remote_XXXX_codes` and reload integration
+```
+{
+  "hob2hood": {
+    "off": [
+      "JgAPABcwFzBFMBcwLkgXMBcXFg0FAAAAAAAAAA==",
+      "JgAPABgwFjBFMBcwLkgXMBcXFg0FAAAAAAAAAA==",
+      "JgAPABgwFzBEMRcwLkcYMBcXFg0FAAAAAAAAAA=="
+    ],
+    "speed1": [
+      "JgAPAC4xFzNAMRcwFxcXMBdIFg0FAAAAAAAAAA==",
+      "JgAPAC4xFzBFMBcwFxcXMBZIFg0FAAAAAAAAAA==",
+      "JgAPAC8wFzBEMRYwFxcXMBdIFg0FAAAAAAAAAA=="
+    ],
+    "speed2": [
+      "JgAJAC8wF2AYR3NJRQ0FAAAAAAAAAAAAAAAAAA==",
+      "JgAJAC8wF2EWSXJIRg0FAAAAAAAAAAAAAAAAAA==",
+      "JgAJAC8wF2AXSXJIRg0FAAAAAAAAAAAAAAAAAA=="
+    ],
+    "speed3": [
+      "JgAJABZJW2FFGBdIRQ0FAAAAAAAAAAAAAAAAAA==",
+      "JgAJABdJXGBGFxZJRA0FAAAAAAAAAAAAAAAAAA==",
+      "JgAJABdJXGFFFxdIRQ0FAAAAAAAAAAAAAAAAAA=="
+    ],
+    "speed4": [
+      "JgANAC5JLhcuSC4wF0gXFy0NBQAAAAAAAAAAAA==",
+      "JgANAC5ILxcuRy8wF0gWGC4NBQAAAAAAAAAAAA==",
+      "JgANAC5JLhcuRy4xF0cYFy0NBQAAAAAAAAAAAA=="
+    ],
+    "lighton": [
+      "JgARABcwFxctGBcwFhgtYhcXFxctDQUAAAAAAA==",
+      "JgARABcwFxctGBcwFxcuYRYYFhgtDQUAAAAAAA==",
+      "JgARABgwFxcuFxYxFxctYRgXFxctDQUAAAAAAA=="
+    ],
+    "lightoff": [
+      "JgARABYwFRkWGBZKFRkUMhYxFhkVDQUAAAAAAA==",
+      "JgARABcxFRkUGhVJFRkWMhUxFhkVDQUAAAAAAA==",
+      "JgARABUyFhkVGBZKFhgXMBYxFhkVDQUAAAAAAA=="
+    ]
+  }
+}
+```
